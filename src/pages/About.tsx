@@ -6,7 +6,7 @@ export default function About() {
         
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8" data-aos="fade-up">
           <p className="text-lg text-gray-700 mb-6">
-            I'm a frontend developer with 5 years of experience building modern web applications.
+            I'm a frontend developer with 2 years of experience building modern web applications.
             My journey in web development started with a passion for creating beautiful user interfaces
             and has evolved into a deep understanding of modern frontend technologies.
           </p>
@@ -24,8 +24,8 @@ export default function About() {
             <ul className="space-y-4">
               <li>
                 <h4 className="font-semibold">Bachelor in Computer Science</h4>
-                <p className="text-gray-600">University of Technology</p>
-                <p className="text-gray-500">2015 - 2019</p>
+                <p className="text-gray-600">Visvesvaraya Technological University</p>
+                <p className="text-gray-500">2021 - 2021</p>
               </li>
             </ul>
           </div>
@@ -34,14 +34,14 @@ export default function About() {
             <h3 className="text-xl font-bold mb-4">Experience</h3>
             <ul className="space-y-4">
               <li>
-                <h4 className="font-semibold">Senior Frontend Developer</h4>
-                <p className="text-gray-600">Tech Solutions Inc.</p>
-                <p className="text-gray-500">2019 - Present</p>
+                <h4 className="font-semibold">Full Stack Developer Intern</h4>
+                <p className="text-gray-600">Dotch Endeavours</p>
+                <p className="text-gray-500">Sept-2023 to Nov-2023</p>
               </li>
               <li>
-                <h4 className="font-semibold">Frontend Developer</h4>
+               {/*  <h4 className="font-semibold">Frontend Developer</h4>
                 <p className="text-gray-600">Digital Agency XYZ</p>
-                <p className="text-gray-500">2017 - 2019</p>
+                <p className="text-gray-500">2017 - 2019</p> */}
               </li>
             </ul>
           </div>

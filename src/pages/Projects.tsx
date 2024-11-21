@@ -1,27 +1,29 @@
+
+
 const projects = [
   {
-    title: 'E-commerce Platform',
-    description: 'A full-featured e-commerce platform built with React and Node.js',
-    image: 'https://images.unsplash.com/photo-1557821552-17105176677c?auto=format&fit=crop&w=600',
-    technologies: ['React', 'Node.js', 'MongoDB', 'Tailwind CSS'],
-    demoUrl: 'https://demo.com',
-    githubUrl: 'https://github.com',
+    title: 'DocuPilot',
+    description: 'This innovative tool enables developers to effortlessly test, document, and manage APIs while maintaining a smooth user experience.',
+    image: '/src/assets/docu.png',
+    technologies: ['React', 'TypeScript', 'Axios','Lucide-React', 'Tailwind CSS'],
+    demoUrl: 'https://docupilot.vercel.app',
+    githubUrl: 'https://github.com/becodewala-youtube/DocuPilot',
   },
   {
-    title: 'Task Management App',
-    description: 'A collaborative task management application with real-time updates',
-    image: 'https://images.unsplash.com/photo-1557804506-669a67965ba0?auto=format&fit=crop&w=600',
-    technologies: ['React', 'Firebase', 'Material-UI'],
-    demoUrl: 'https://demo.com',
-    githubUrl: 'https://github.com',
+    title: 'QuillMark',
+    description: 'A seamless Markdown editing experience designed for developers, writers, and content creators, combining functionality, accessibility, and aesthetic appeal.',
+    image: '/src/assets/quill.png',
+    technologies: ['React', 'TypeScript', 'Marked','React-Split','Tailwind CSS'],
+    demoUrl: 'https://quillmark.vercel.app',
+    githubUrl: 'https://github.com/becodewala-youtube/QuillMark',
   },
   {
-    title: 'Weather Dashboard',
-    description: 'A weather dashboard with detailed forecasts and interactive maps',
-    image: 'https://images.unsplash.com/photo-1592210454359-9043f067919b?auto=format&fit=crop&w=600',
-    technologies: ['React', 'OpenWeather API', 'Chart.js'],
-    demoUrl: 'https://demo.com',
-    githubUrl: 'https://github.com',
+    title: 'TaskTrek',
+    description: 'A modern, feature-rich application designed to help users plan, organize, and visualize project milestones effectively, combining accessibility, intuitive design, and exportable roadmaps.',
+    image: '/src/assets/task.png',
+    technologies: ['React', 'TypeScript', 'Zustand','html2pdf','Tailwind CSS'],
+    demoUrl: 'https://tasktrek-becodewala.vercel.app',
+    githubUrl: 'https://github.com/becodewala-youtube/TaskTrek',
   },
 ];
 

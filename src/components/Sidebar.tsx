@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Home, User, Code2, Briefcase, Mail, Github, Linkedin, Twitter } from 'lucide-react';
+import ProfilePic from '../assets/profile-pic.png'
 
 const navItems = [
   { path: '/', icon: Home, label: 'Home' },
@@ -30,11 +31,11 @@ export default function Sidebar() {
         <div className="flex flex-col h-full">
           <div className="p-6 text-center">
             <img
-              src="https://images.unsplash.com/photo-1535713875002-d1d0cf377fde?auto=format&fit=crop&w=150&h=150"
+              src={ProfilePic}
               alt="Profile"
               className="w-24 h-24 mx-auto rounded-full object-cover mb-4"
             />
-            <h2 className="text-xl font-bold">John Doe</h2>
+            <h2 className="text-xl font-bold">Vikash Kumar</h2>
             <p className="text-gray-600">Frontend Developer</p>
           </div>
 
@@ -61,7 +62,7 @@ export default function Sidebar() {
           <div className="p-6 border-t">
             <div className="flex justify-center space-x-4">
               <a
-                href="https://github.com"
+                href="https://github.com/becodewala-youtube"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -69,7 +70,7 @@ export default function Sidebar() {
                 <Github size={20} />
               </a>
               <a
-                href="https://linkedin.com"
+                href="https://www.linkedin.com/in/vikash-kumar-becodewala/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"
@@ -77,7 +78,7 @@ export default function Sidebar() {
                 <Linkedin size={20} />
               </a>
               <a
-                href="https://twitter.com"
+                href="https://x.com/becodewala"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-gray-600 hover:text-gray-900"

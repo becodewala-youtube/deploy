@@ -29,15 +29,15 @@ export default function Contact() {
               <div className="space-y-4">
                 <div className="flex items-center">
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
-                  <span>john.doe@example.com</span>
+                  <span>kvikash74673@gmail.com</span>
                 </div>
                 <div className="flex items-center">
                   <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <span>+1 (555) 123-4567</span>
+                  <span>+91 7406028756</span>
                 </div>
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
-                  <span>San Francisco, CA</span>
+                  <span>Bangalore, India</span>
                 </div>
               </div>
             </div>

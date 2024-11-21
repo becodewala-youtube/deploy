@@ -3,8 +3,8 @@ const skills = [
     category: 'Frontend',
     items: [
       { name: 'React.js', level: 90 },
-      { name: 'TypeScript', level: 85 },
-      { name: 'Next.js', level: 80 },
+      { name: 'TypeScript', level: 65 },
+      { name: 'Next.js', level: 50 },
       { name: 'Tailwind CSS', level: 90 },
     ],
   },
@@ -12,9 +12,9 @@ const skills = [
     category: 'Tools & Others',
     items: [
       { name: 'Git', level: 85 },
-      { name: 'Webpack', level: 75 },
-      { name: 'Jest', level: 80 },
-      { name: 'Figma', level: 70 },
+      { name: 'Redux-Toolkit', level: 75 },
+      { name: 'VScode', level: 80 },
+      { name: 'Zustand', level: 70 },
     ],
   },
 ];
