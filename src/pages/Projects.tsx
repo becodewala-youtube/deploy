@@ -1,10 +1,12 @@
-
+import docu from '../assets/docu.png'
+import quill from '../assets/quill.png'
+import task from '../assets/task.png'
 
 const projects = [
   {
     title: 'DocuPilot',
     description: 'This innovative tool enables developers to effortlessly test, document, and manage APIs while maintaining a smooth user experience.',
-    image: '/src/assets/docu.png',
+    image: docu,
     technologies: ['React', 'TypeScript', 'Axios','Lucide-React', 'Tailwind CSS'],
     demoUrl: 'https://docupilot.vercel.app',
     githubUrl: 'https://github.com/becodewala-youtube/DocuPilot',
@@ -12,7 +14,7 @@ const projects = [
   {
     title: 'QuillMark',
     description: 'A seamless Markdown editing experience designed for developers, writers, and content creators, combining functionality, accessibility, and aesthetic appeal.',
-    image: '/src/assets/quill.png',
+    image: quill,
     technologies: ['React', 'TypeScript', 'Marked','React-Split','Tailwind CSS'],
     demoUrl: 'https://quillmark.vercel.app',
     githubUrl: 'https://github.com/becodewala-youtube/QuillMark',
@@ -20,7 +22,7 @@ const projects = [
   {
     title: 'TaskTrek',
     description: 'A modern, feature-rich application designed to help users plan, organize, and visualize project milestones effectively, combining accessibility, intuitive design, and exportable roadmaps.',
-    image: '/src/assets/task.png',
+    image: task,
     technologies: ['React', 'TypeScript', 'Zustand','html2pdf','Tailwind CSS'],
     demoUrl: 'https://tasktrek-becodewala.vercel.app',
     githubUrl: 'https://github.com/becodewala-youtube/TaskTrek',
