@@ -18,7 +18,7 @@ export default function Sidebar() {
     <>
       <button
         onClick={() => setIsOpen(!isOpen)}
-        className="fixed top-4 right-4 z-50 p-2 bg-white rounded-lg shadow-lg md:hidden"
+        className="fixed top-4 left-[23rem] z-50 p-2 bg-white rounded-lg shadow-lg md:hidden"
       >
         {isOpen ? <X size={24} /> : <Menu size={24} />}
       </button>
