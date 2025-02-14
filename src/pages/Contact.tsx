@@ -1,18 +1,34 @@
-import { useState } from 'react';
 import { Mail, Phone, MapPin } from 'lucide-react';
-
+import { useRef, useState } from 'react';
+import emailjs from '@emailjs/browser';
 
 export default function Contact() {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    message: '',
-  });
+  // Declare state for success message
+  const [messageSent, setMessageSent] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  // Reference for the form
+  const form = useRef<HTMLFormElement | null>(null);
+
+  // Handle form submission
+  const sendEmail = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    
-    setFormData({ name: '', email: '', message: '' });
+
+    if (form.current) {
+      emailjs
+        .sendForm('service_n0fve1r', 'template_dlfy58y', form.current, {
+          publicKey: 'r8ZjsvIXaIWIs0GPi',
+        })
+        .then(
+          () => {
+            setMessageSent(true); // Set success message state
+            console.log('SUCCESS!');
+          },
+          (error) => {
+            console.log('FAILED...', error.text);
+            setMessageSent(false); // Ensure failure resets success message
+          }
+        );
+    }
   };
 
   return (
@@ -43,58 +59,76 @@ export default function Contact() {
             </div>
           </div>
 
-          <form onSubmit={handleSubmit} className="space-y-6" data-aos="fade-left">
+          <form
+            ref={form}
+            onSubmit={sendEmail}
+            className="space-y-6"
+            data-aos="fade-left"
+          >
             <div>
-              <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="name"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Name
               </label>
               <input
                 type="text"
                 id="name"
-                value={formData.name}
-                onChange={(e) => setFormData({ ...formData, name: e.target.value })}
+                name="from_name"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="email"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Email
               </label>
               <input
                 type="email"
                 id="email"
-                value={formData.email}
-                onChange={(e) => setFormData({ ...formData, email: e.target.value })}
+                name="email_id"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
               />
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium text-gray-700 mb-1">
+              <label
+                htmlFor="message"
+                className="block text-sm font-medium text-gray-700 mb-1"
+              >
                 Message
               </label>
               <textarea
                 id="message"
-                value={formData.message}
-                onChange={(e) => setFormData({ ...formData, message: e.target.value })}
-                rows={4}
+                name="message"
                 className="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent"
                 required
               ></textarea>
             </div>
-
+            {messageSent && (
+            <div className="mt-4 text-center text-green-600 font-semibold">
+              Your message has been sent successfully!
+            </div>
+          )}
             <button
               type="submit"
               className="w-full px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+              value="Send"
             >
               Send Message
             </button>
           </form>
+
+          {/* Show success message when email is sent */}
+         
         </div>
       </div>
-          </div>
+    </div>
   );
 }

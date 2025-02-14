@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Home, User, Code2, Briefcase, Mail, Github, Linkedin, Twitter } from 'lucide-react';
-import ProfilePic from '../assets/profile-pic.png'
+import ProfilePic from '../assets/profile-pic.jpg'
 
 const navItems = [
   { path: '/', icon: Home, label: 'Home' },

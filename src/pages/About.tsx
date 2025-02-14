@@ -6,7 +6,7 @@ export default function About() {
         
         <div className="bg-white rounded-lg shadow-lg p-8 mb-8" data-aos="fade-up">
           <p className="text-lg text-gray-700 mb-6">
-            I'm a frontend developer with 2 years of experience building modern web applications.
+            I'm a frontend developer, building modern web applications.
             My journey in web development started with a passion for creating beautiful user interfaces
             and has evolved into a deep understanding of modern frontend technologies.
           </p>
@@ -25,7 +25,7 @@ export default function About() {
               <li>
                 <h4 className="font-semibold">Bachelor in Computer Science</h4>
                 <p className="text-gray-600">Visvesvaraya Technological University</p>
-                <p className="text-gray-500">2021 - 2021</p>
+                <p className="text-gray-500">2021 - 2025</p>
               </li>
             </ul>
           </div>
