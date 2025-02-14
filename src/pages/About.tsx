@@ -25,7 +25,7 @@ export default function About() {
               <li>
                 <h4 className="font-semibold">Bachelor in Computer Science</h4>
                 <p className="text-gray-600">Visvesvaraya Technological University</p>
-                <p className="text-gray-500">2021 - 2021</p>
+                <p className="text-gray-500">2021 - 2025</p>
               </li>
             </ul>
           </div>
