@@ -15,8 +15,8 @@ export default function Contact() {
 
     if (form.current) {
       emailjs
-        .sendForm('service_n0fve1r', 'template_dlfy58y', form.current, {
-          publicKey: 'r8ZjsvIXaIWIs0GPi',
+        .sendForm('service_name', 'template_name', form.current, {  // checkout emailjs for the all credentials 
+          publicKey: 'emailjs_public_key',  // use your keys , do not use mine😂
         })
         .then(
           () => {
