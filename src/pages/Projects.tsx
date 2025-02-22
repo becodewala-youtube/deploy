@@ -3,14 +3,7 @@ import quill from '../assets/quill.png'
 import task from '../assets/task.png'
 
 const projects = [
- /*  {
-    title: 'DocuPilot',
-    description: 'This innovative tool enables developers to effortlessly test, document, and manage APIs while maintaining a smooth user experience.',
-    image: docu,
-    technologies: ['React', 'TypeScript', 'Axios','Lucide-React', 'Tailwind CSS'],
-    demoUrl: 'https://docupilot.vercel.app',
-    githubUrl: 'https://github.com/becodewala-youtube/DocuPilot',
-  }, */
+ 
   {
     title: 'QuillMark',
     description: 'A seamless Markdown editing experience designed for developers, writers, and content creators, combining functionality, accessibility, and aesthetic appeal.',
