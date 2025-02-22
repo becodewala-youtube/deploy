@@ -47,10 +47,7 @@ export default function Contact() {
                   <Mail className="w-5 h-5 text-blue-600 mr-3" />
                   <span>kvikash74673@gmail.com</span>
                 </div>
-                <div className="flex items-center">
-                  <Phone className="w-5 h-5 text-blue-600 mr-3" />
-                  <span>+91 7406028756</span>
-                </div>
+                
                 <div className="flex items-center">
                   <MapPin className="w-5 h-5 text-blue-600 mr-3" />
                   <span>Bangalore, India</span>

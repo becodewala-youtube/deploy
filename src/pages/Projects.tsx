@@ -1,4 +1,4 @@
-import docu from '../assets/docu.png'
+
 import quill from '../assets/quill.png'
 import task from '../assets/task.png'
 

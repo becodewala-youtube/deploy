@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 import { Menu, X, Home, User, Code2, Briefcase, Mail, Github, Linkedin, Twitter } from 'lucide-react';
-import ProfilePic from '../assets/profile-pic.jpg'
+import ProfilePic from '../assets/profile-pic.jpg';
 
 const navItems = [
   { path: '/', icon: Home, label: 'Home' },
@@ -24,9 +24,7 @@ export default function Sidebar() {
       </button>
 
       <aside
-        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r transform transition-transform duration-300 ease-in-out ${
-          isOpen ? 'translate-x-0' : '-translate-x-full'
-        } md:translate-x-0`}
+        className={`fixed inset-y-0 left-0 z-40 w-64 bg-white border-r transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:translate-x-0`}
       >
         <div className="flex flex-col h-full">
           <div className="p-6 text-center">
@@ -45,11 +43,7 @@ export default function Sidebar() {
                 key={path}
                 to={path}
                 className={({ isActive }) =>
-                  `flex items-center px-4 py-3 mb-2 rounded-lg transition-colors ${
-                    isActive
-                      ? 'bg-blue-50 text-blue-600'
-                      : 'text-gray-700 hover:bg-gray-100'
-                  }`
+                  `flex items-center px-4 py-3 mb-2 rounded-lg transition-colors ${isActive ? 'bg-blue-50 text-blue-600' : 'text-gray-700 hover:bg-gray-100'}`
                 }
                 onClick={() => setIsOpen(false)}
               >
@@ -59,8 +53,8 @@ export default function Sidebar() {
             ))}
           </nav>
 
-          <div className="p-6 border-t">
-            <div className="flex justify-center space-x-4">
+          <div className="p-6 border-t flex justify-between items-center">
+            <div className="flex justify-center space-x-4 mt-2">
               <a
                 href="https://github.com/becodewala-youtube"
                 target="_blank"

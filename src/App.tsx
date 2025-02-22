@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import { BrowserRouter as Router } from 'react-router-dom';
-import AOS from 'aos'
+import AOS from 'aos';
 import 'aos/dist/aos.css';
 import Sidebar from './components/Sidebar';
 import AppRoutes from './routes';
 
 function App() {
   useEffect(() => {
+    // Initialize AOS animations
     AOS.init({
       duration: 1000,
       once: true,
