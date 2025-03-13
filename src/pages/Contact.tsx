@@ -15,13 +15,8 @@ export default function Contact() {
 
     if (form.current) {
       emailjs
-<<<<<<< HEAD
         .sendForm(import.meta.env.VITE_SERVICE_ID, import.meta.env.VITE_TEMPLATE_ID, form.current, {
           publicKey: import.meta.env.VITE_API_KEY,
-=======
-        .sendForm('service_name', 'template_name', form.current, {  // checkout emailjs for the all credentials 
-          publicKey: 'emailjs_public_key',  // use your keys , do not use mine😂
->>>>>>> 3fb9cf536b14f874a825d40ec5cdf78720ba4fd3
         })
         .then(
           () => {
