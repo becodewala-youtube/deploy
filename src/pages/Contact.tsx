@@ -35,7 +35,7 @@ export default function Contact() {
     <div className="min-h-screen p-6 py-20">
       <div className="max-w-4xl mx-auto">
         <h2 className="text-4xl font-bold mb-8" data-aos="fade-down">
-          Get in Touch with becodewala
+          Get in Touch 
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
